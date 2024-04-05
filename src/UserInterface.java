@@ -1,6 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -10,7 +9,6 @@ import java.util.Random;
 public class UserInterface extends JFrame {
     private JTextArea textArea;
     private JPanel panel;
-    private Color randomGreenHue;
     private final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     public UserInterface() {
@@ -22,7 +20,6 @@ public class UserInterface extends JFrame {
         setSize(400, 300);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        randomGreenHue = generateRandomGreenHue();
 
         textArea = new JTextArea();
         panel = new JPanel(); // Initialize the JPanel
