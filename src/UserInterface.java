@@ -58,7 +58,7 @@ public class UserInterface extends JFrame {
     }
 
     private void saveText() {
-        try (FileWriter writer = new FileWriter("save_file.txt")) {
+        try (FileWriter writer = new FileWriter("log.txt")) {
             writer.write(textArea.getText());
         } catch (IOException ex) {
             ex.printStackTrace();
